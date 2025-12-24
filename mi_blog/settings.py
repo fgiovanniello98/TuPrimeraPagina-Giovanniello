@@ -17,7 +17,7 @@ MIDDLEWARE = [
  'django.contrib.auth.middleware.AuthenticationMiddleware',
  'django.contrib.messages.middleware.MessageMiddleware',
 ]
-ROOT_URLCONF = 'TuPrimeraPaginaGiovanniello.urls'
+ROOT_URLCONF = 'mi_blog.urls'
 TEMPLATES = [{
  'BACKEND':'django.template.backends.django.DjangoTemplates',
  'DIRS':[],
@@ -29,7 +29,7 @@ TEMPLATES = [{
   'django.contrib.messages.context_processors.messages',
  ]},
 }]
-WSGI_APPLICATION = 'TuPrimeraPaginaGiovanniello.wsgi.application'
+WSGI_APPLICATION = 'mi_blog.wsgi.application'
 DATABASES = {'default':{'ENGINE':'django.db.backends.sqlite3','NAME':BASE_DIR/'db.sqlite3'}}
 LANGUAGE_CODE = 'es-ar'
 TIME_ZONE = 'America/Argentina/Buenos_Aires'
