@@ -17,6 +17,6 @@ class Post(models.Model):
     contenido = models.TextField()
     fecha_publicacion = models.DateField()
     autor = models.ForeignKey(Autor, on_delete=models.CASCADE)
-    categoria = models.ForeignKey(Categoria, on_delete=models.SET_NULL, null=True)
+    categoria = models.ForeignKey(Categoria, on_delete=models.SET_NULL, null=True, blank=True)
     def __str__(self):
         return self.titulo
